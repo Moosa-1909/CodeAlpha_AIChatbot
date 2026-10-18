@@ -1,0 +1,37 @@
+# Knowledge base. Format:  question | answer
+# Add your own lines here, or teach the bot at runtime with:  teach: question => answer
+
+# --- CodeAlpha internship ---
+How do I submit my completed task? | Upload your code to GitHub in a repo named CodeAlpha_ProjectName, post a video explanation on LinkedIn with the repo link, then submit via the Submission Form shared in your WhatsApp group.
+How many tasks must I complete for the internship? | You must complete a minimum of two or three tasks. Submitting only one task is considered incomplete and no certificate is issued.
+Will I get a certificate if I only finish one task? | No. Certificates are only issued if you complete at least two or three tasks.
+What do I get after completing the internship? | A QR-verified completion certificate, a unique ID certificate, a letter of recommendation based on performance, job and placement support, and resume building support.
+What should I post on LinkedIn for the internship? | Share your internship status tagging CodeAlpha, and post a video explanation of each project with the GitHub repo link.
+What should my GitHub repository be named? | Name it CodeAlpha_ProjectName, for example CodeAlpha_HotelReservationSystem.
+What are the Java internship tasks? | Student Grade Tracker, Stock Trading Platform, AI Chatbot, and Hotel Reservation System. Complete any two or three of them.
+
+# --- Java basics ---
+What is Java? | Java is a high-level, object-oriented, platform-independent programming language that compiles to bytecode and runs on the JVM.
+What is the difference between JDK, JRE and JVM? | The JVM runs bytecode, the JRE is the JVM plus the standard libraries needed to run programs, and the JDK is the JRE plus development tools like the compiler (javac).
+What is a class and an object? | A class is a blueprint that defines fields and methods. An object is an instance of a class created with new.
+What is OOP? | Object-oriented programming organizes code into objects and is built on four pillars: encapsulation, inheritance, polymorphism and abstraction.
+What is encapsulation? | Encapsulation bundles data and the methods that operate on it, hiding internal state behind private fields and public getters and setters.
+What is inheritance? | Inheritance lets a class reuse and extend another class using the extends keyword, modelling an is-a relationship.
+What is polymorphism? | Polymorphism lets the same method call behave differently depending on the object, through method overloading at compile time and overriding at runtime.
+What is abstraction? | Abstraction hides implementation details and exposes only essential behavior, using abstract classes and interfaces.
+What is the difference between an interface and an abstract class? | An interface defines a contract that classes implement, and a class can implement many. An abstract class can hold state and partial implementation, but a class can extend only one.
+What is the difference between ArrayList and LinkedList? | ArrayList uses a resizable array with fast random access. LinkedList uses nodes with fast insertion and removal at the ends but slow random access.
+What is a HashMap? | A HashMap stores key-value pairs using hashing, giving average constant-time get and put. Keys must be unique and it is not thread-safe.
+What is the difference between == and equals()? | == compares references (or primitive values), while equals() compares logical content when a class overrides it, as String does.
+What is an exception? | An exception is an event that disrupts normal program flow. Handle it with try, catch and finally, or declare it with throws.
+What is the difference between checked and unchecked exceptions? | Checked exceptions must be handled or declared at compile time, like IOException. Unchecked exceptions extend RuntimeException and need not be handled, like NullPointerException.
+What is multithreading? | Multithreading runs multiple threads concurrently within one program. In Java you create threads by extending Thread or implementing Runnable.
+What is garbage collection? | Garbage collection automatically frees memory used by objects that are no longer reachable.
+
+# --- AI / NLP ---
+What is machine learning? | Machine learning is a branch of AI where systems learn patterns from data to make predictions or decisions without being explicitly programmed.
+What is NLP? | Natural Language Processing is the field of AI that lets computers understand, interpret and generate human language.
+How do you work? | I clean your message (lowercase, remove stop words, stem words), turn it into a TF-IDF vector, and find the most similar stored question using cosine similarity.
+What is TF-IDF? | TF-IDF scores how important a word is to a document: term frequency (how often it appears) multiplied by inverse document frequency (how rare it is across all documents).
+What is cosine similarity? | Cosine similarity measures the angle between two vectors. A value near 1 means the texts are very similar and near 0 means unrelated.
+Who made you? | I was built in Java as part of the CodeAlpha internship AI Chatbot task.
