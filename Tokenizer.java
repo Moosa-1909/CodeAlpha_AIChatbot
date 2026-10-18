@@ -4,7 +4,7 @@ import java.util.*;
 public class Tokenizer {
     private static final Set<String> STOP = new HashSet<>(Arrays.asList(
             "a", "an", "the", "is", "are", "was", "were", "be", "what", "whats", "how", "do", "does", "did",
-            "i", "you", "me", "my", "we", "to", "of", "in", "on", "for", "and", "or", "can", "could", "tell",
+            "i", "you", "me", "my", "we", "to", "of", "in", "on", "and", "or", "can", "could", "tell",
             "about", "please", "it", "this", "that", "with", "will", "should", "get", "there", "if", "so"));
 
     private static final Map<String, String> SYNONYMS = new HashMap<>();

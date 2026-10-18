@@ -115,12 +115,12 @@ public class KnowledgeBase {
     private List<String> correctTypos(List<String> tokens) {
         List<String> out = new ArrayList<>();
         for (String t : tokens) {
-            if (idf.containsKey(t) || t.length() < 4) { out.add(t); continue; }
+            if (idf.containsKey(t) || t.length() < 5) { out.add(t); continue; }
             int limit = t.length() >= 7 ? 2 : 1;
             String best = null;
             int bestDist = limit + 1;
             for (String known : idf.keySet()) {
-                if (Math.abs(known.length() - t.length()) > limit) continue;
+                if (known.length() < 4 || Math.abs(known.length() - t.length()) > limit) continue;
                 int d = editDistance(t, known);
                 if (d < bestDist) { bestDist = d; best = known; }
             }
